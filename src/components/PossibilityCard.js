@@ -43,7 +43,7 @@ function PossibilityCard() {
       <Grid item xs={1} sm container>
         <Grid item xs container direction="column" spacing={2}>
             <Typography  variant="h4" component="h2">
-              Investopedia
+             
             </Typography>
         </Grid>
       </Grid>
