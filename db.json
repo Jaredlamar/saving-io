@@ -1,22 +1,3 @@
 {
-  "user": [
-    {
-      "date": "2022-06-14",
-      "username": "Kim",
-      "income": "5000",
-      "rent": "1000",
-      "expenses": "200",
-      "savings": "300",
-      "id": 1
-    },
-    {
-      "date": "2022-06-13",
-      "username": "dsdsd",
-      "income": 0,
-      "rent": 0,
-      "expenses": 0,
-      "savings": 0,
-      "id": 2
-    }
-  ]
+  "user": []
 }
