@@ -20,15 +20,15 @@ function App() {
   const [savings, setSavings] = useState([]);
 
   useEffect(() => {
-    fetch(`/user`)
+    fetch(`${process.env.REACT_APP_API_URL}/user`)
       .then((res) => res.json())
       .then((data) => setSavings(data))
       .catch((error) => console.log(error.message));
   }, []);
 
   function postData(formdata) {
-    //console.log(formdata)
-    fetch(`/user`, {
+    console.log(formdata);
+    fetch(`${process.env.REACT_APP_API_URL}/user`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ function App() {
 
   function eraseData(id) {
     console.log(typeof id);
-    fetch(`/user/${id}`, {
+    fetch(`${process.env.REACT_APP_API_URL}/user/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
